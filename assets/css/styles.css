@@ -63,20 +63,23 @@
     background-color: var(--button-foreground, var(--accent-color));
     color: var(--button-font-color, var(--base-color));
     border-radius: 1rem;
+    
   }
 
   a {
     display: flex;
     align-items: center;
+    cursor: pointer;
     img {
       margin-inline-start: .3rem;
     }
   }
+  a:hover {
+    color: var(--accent-color);
+  }
 }
 
 @layer layout {
-  .main_container {
-  }
 
   nav {
     display: flex;
@@ -108,6 +111,12 @@
         border: 1.5px, var(--font-color), solid;
         display: inline-block;
         margin-inline-start: 1rem;
+      }
+
+      button:hover {
+        --button-font-color: var(--accent-color);
+        border: 1.5px, var(--accent-color), solid;
+        cursor: pointer;
       }
 
       button:nth-child(4) {
@@ -147,6 +156,13 @@
 
       button {
         margin-block-start: 2rem;
+      }
+
+      button:hover {
+        --button-font-color: var(--accent-color);
+        background-color: var(--base-color);
+        border: 1.5px, var(--accent-color), solid;
+        cursor: pointer;
       }
 
     }
@@ -203,11 +219,17 @@
           text-align: left;
         }
       }
+
       footer {
         grid-area: footer;
         align-items: end;
         padding: 0;
         margin: 0;
+
+        img {
+          width: 6rem;
+          height: 1rem;
+        }
       }
     }
 
@@ -216,7 +238,6 @@
       div {
         padding-block-start: 8rem;
       }
-
     }
 
   }
