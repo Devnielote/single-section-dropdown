@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Epilogue";
+  src: url("../fonts/Epilogue-VariableFont_wght.ttf");
+  font-weight: 500 700;
+}
+
+root {
+  --accent-color: hsl(0,0%,8%);
+  --base-color: hsl(0,0%,98%);
+  --font-color: hsl(0,0%,41%);
+}
+
+@layer reset {
+
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+  html,body {
+    height: 100%;
+  }
+
+  body {
+    font-family: "Epilogue", sans-serif;
+    line-height: 1.5;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: inherit
+  }
+
+  ul, ol {
+    list-style: none;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  button, input {
+    border: none;
+    outline:none;
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
