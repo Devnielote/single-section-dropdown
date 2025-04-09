@@ -4,7 +4,7 @@
   font-weight: 500 700;
 }
 
-root {
+:root {
   --accent-color: hsl(0,0%,8%);
   --base-color: hsl(0,0%,98%);
   --font-color: hsl(0,0%,41%);
@@ -45,9 +45,31 @@ root {
     border: none;
     outline:none;
   }
+}
 
-  img {
-    width: 100%;
+@layer base {
+  h1,h2 {
+    color: var(--heading-font-color,var(--accent-color));
+    font-size: var(--heading-font-size, 1.8rem);
   }
 
+  p {
+    color: var(--paragraph-font-color, var(--font-color));
+  }
+
+  button {
+    width: var(--button-width, 8rem);
+    padding: var(--button-padding, .8rem);
+    background-color: var(--button-foreground, var(--accent-color));
+    color: var(--button-font-color, var(--base-color));
+    border-radius: .8rem;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    img {
+      margin-inline-start: .3rem;
+    }
+  }
 }
