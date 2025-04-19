@@ -12,7 +12,21 @@
         <img src="assets/images/logo.svg">
         <ul>
           <li>
-            <a>Feature <img src="assets/images/icon-arrow-down.svg"></a>
+            <a>Features <img src="assets/images/icon-arrow-down.svg"></a>
+            <ul class="submenu_desktop">
+              <li>
+                <a> <img src="assets/images/icon-todo.svg" alt="A notebook"> Todo List </a>
+                </li>
+                <li>
+                  <a> <img src="assets/images/icon-calendar.svg" alt="A calendar"> Calendar </a>
+                </li>
+                <li>
+                  <a> <img src="assets/images/icon-reminders.svg" alt="A bell"> Reminders </a>
+                </li>
+                <li>
+                  <a> <img src="assets/images/icon-planning.svg" alt="A clock"> Planning </a>
+                </li>
+              </ul>
           </li>
           <li>
             <a>Company <img src="assets/images/icon-arrow-down.svg"></a>
@@ -24,7 +38,51 @@
             <a>About</a>
           </li>
         </ul>
-        <img src="assets/images/icon-menu.svg">
+        <img id="menuToggle" src="assets/images/icon-menu.svg">
+        <nav id="mobileMenu" class="mobile_menu">
+          <img id="closeMenu" src="./assets/images/icon-close-menu.svg">
+          <ul class="mobile_menu_links_container">
+            <li class="feature_link_container">
+              <a id="submenuToggle" class="submenu_toggle">Features <img id="openSubmenuIcon" src="assets/images/icon-arrow-down.svg"></a>
+              <ul id="mobileSubmenu" class="submenu">
+                <li>
+                  <a> <img src="assets/images/icon-todo.svg" alt="A notebook"> Todo List </a>
+                </li>
+                <li>
+                  <a> <img src="assets/images/icon-calendar.svg" alt="A calendar"> Calendar </a>
+                </li>
+                <li>
+                  <a> <img src="assets/images/icon-reminders.svg" alt="A bell"> Reminders </a>
+                </li>
+                <li>
+                  <a> <img src="assets/images/icon-planning.svg" alt="A clock"> Planning </a>
+                </li>
+              </ul>
+            </li>
+            <li class="company_link_container">
+              <a id="submenuToggle2">Company <img src="assets/images/icon-arrow-down.svg"></a>
+              <ul id="mobileSubmenu2" class="submenu">
+                <li>
+                  <a> History </a>
+                </li>
+                <li>
+                  <a> Our Team </a>
+                </li>
+                <li>
+                  <a> Blog </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>Careers</a>
+            </li>
+            <li>
+              <a>About</a>
+            </li>
+          </ul>
+          <button>Login</button>
+          <button>Register</button>
+        </nav>
         <button>Login</button>
         <button>Register</button>
       </nav>
@@ -47,5 +105,6 @@
         </footer>
       </section>
     </div>
+    <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
