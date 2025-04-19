@@ -119,7 +119,7 @@
         cursor: pointer;
       }
 
-      button:nth-child(4) {
+      button:nth-child(5) {
         border: none;
         margin-left: auto;
       }
@@ -241,4 +241,101 @@
     }
 
   }
+}
+
+@layer mobile_menu {
+  .mobile_menu {
+    position: fixed;
+    display: fixed;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: var(--base-color);
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+
+    img {
+      margin-left: auto;
+    }
+
+    .mobile_menu_links_container {
+      display: block;
+      width: 100%;
+      li {
+        margin-block-start: 1rem;
+        a {
+          img {
+            margin-inline-start: 1rem;
+          }
+        }
+        .submenu {
+          display: none;
+          transform: translateY(-100%);
+          transition: transform 0.3s ease-in-out;
+          img {
+
+            margin-inline-end: .5rem;
+          }
+        }
+        .submenu.active {
+          display: flex;
+          flex-direction: column;
+          transform: translateY(0%);
+        }
+
+        .submenu.hidden {
+          display: none;
+        }
+
+      }
+      .company_link_container {
+        ul {
+          margin-inline-start: 1rem;
+        }
+      }
+
+      .active_btn {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease; 
+      }
+
+    }
+
+    button {
+      --button-foreground:var(--base-color);
+      --button-font-color:var(--font-color);
+      --button-padding: .5rem;
+      display: block;
+      height: 2.5rem;
+      border: 1.5px, var(--font-color), solid;
+      margin: 0 auto;
+      margin-block-start: 1rem;
+    }
+
+    button:nth-child(3) {
+      border: none;
+    }
+  }
+
+  /*Lógica de submenus*/
+
+  .feature_link_container, .company_link_container {
+    position: relative;
+  }
+
+  .mobile_menu.active {
+    transform: translateX(0);
+  }
+
+  .submenu_desktop {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
 }
