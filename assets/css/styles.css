@@ -108,7 +108,7 @@
       button {
         --button-foreground: none;
         --button-font-color: var(--font-color);
-        border: 1.5px, var(--font-color), solid;
+        border: 1.5px var(--font-color) solid;
         display: inline-block;
         margin-inline-start: 1rem;
       }
@@ -161,7 +161,7 @@
       button:hover {
         --button-font-color: var(--accent-color);
         background-color: var(--base-color);
-        border: 1.5px, var(--accent-color), solid;
+        border: 1.5px var(--accent-color) solid;
         cursor: pointer;
       }
 
@@ -312,7 +312,7 @@
       --button-padding: .5rem;
       display: block;
       height: 2.5rem;
-      border: 1.5px, var(--font-color), solid;
+      border: 1.5px, solid, var(--accent-color);
       margin: 0 auto;
       margin-block-start: 1rem;
     }
@@ -375,6 +375,6 @@
     transform: rotate(180deg);
     transition: transform 0.3s ease; 
   }
-
+  
 
 }
