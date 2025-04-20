@@ -11,3 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   toggleSubmenu("#mobileSubmenu2", "#submenuToggle2")
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+  toggleSubmenu("#desktopSubmenu", "#submenuDesktopToggle")
+})
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  toggleSubmenu("#desktopSubmenu2", "#submenuDesktopToggle2")
+})

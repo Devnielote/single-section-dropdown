@@ -11,9 +11,9 @@
       <nav>
         <img src="assets/images/logo.svg">
         <ul>
-          <li>
-            <a>Features <img src="assets/images/icon-arrow-down.svg"></a>
-            <ul class="submenu_desktop">
+          <li class="submenu_desktop_toggle">
+            <a id="submenuDesktopToggle">Features <img src="assets/images/icon-arrow-down.svg"></a>
+            <ul id="desktopSubmenu" class="submenu_desktop">
               <li>
                 <a> <img src="assets/images/icon-todo.svg" alt="A notebook"> Todo List </a>
                 </li>
@@ -28,8 +28,19 @@
                 </li>
               </ul>
           </li>
-          <li>
-            <a>Company <img src="assets/images/icon-arrow-down.svg"></a>
+          <li class="submenu_desktop_toggle">
+            <a id="submenuDesktopToggle2"><p>Company</p><img src="assets/images/icon-arrow-down.svg"></a>
+            <ul id="desktopSubmenu2" class="submenu_desktop company">
+                <li>
+                  <a> History </a>
+                </li>
+                <li>
+                  <a> Our Team </a>
+                </li>
+                <li>
+                  <a> Blog </a>
+                </li>
+              </ul>
           </li>
           <li>
             <a>Careers</a>

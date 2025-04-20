@@ -324,18 +324,57 @@
 
   /*Lógica de submenus*/
 
-  .feature_link_container, .company_link_container {
-    position: relative;
-  }
-
   .mobile_menu.active {
     transform: translateX(0);
   }
 
-  .submenu_desktop {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+
+  .submenu_desktop_toggle {
+    position: relative;
   }
+  .submenu_desktop {
+    position: absolute;
+    top: 30px;
+    left: -80px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--base-color);
+    box-shadow: 0px 7px 33px 9px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 7px 33px 9px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 7px 33px 9px rgba(0,0,0,0.24);
+    border-radius: .5rem;
+    li {
+      width: 100%;
+      margin-block-start: .5rem;
+      a {
+        img {
+          margin: 0;
+          margin-inline-end: .5rem;
+        }
+      }
+    }
+  }
+
+  .company {
+    left: 0;
+    width: 120px;
+    li {
+      display: flex;
+      justify-content: left;
+    }
+  }
+
+  .submenu_desktop.active {
+    display: flex;
+  }
+
+  .active_btn {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease; 
+  }
+
 
 }
