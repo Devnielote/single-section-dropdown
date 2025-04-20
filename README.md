@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Link](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-grid-and-flexbox-7W2W1FvlOn)
-- Live Site URL: [Link](https://devnielote.github.io/single-section-dropdown/)
+- Solution [URL](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-grid-and-flexbox-7W2W1FvlOn)
+- Live Site [URL](https://devnielote.github.io/single-section-dropdown/)
 
 ## My process
 
@@ -44,7 +44,7 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@Devnielote](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Devnielote](https://www.frontendmentor.io/profile/Devnielote)
 
 
 ## Acknowledgments
